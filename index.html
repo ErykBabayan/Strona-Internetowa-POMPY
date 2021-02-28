@@ -9,12 +9,12 @@
 
 	<body>
 		<header class="header">
-			<a href="#default" class="logo">LOGO</a>
+			<a href="#default" class="logo">Zephyr</a>
 			<div class="header-right">
-				<a href="">Home</a>
-				<a href="">Produkty</a>
-				<a href="">Jak dobrać pompę</a>
-				<a href="">Kontakt</a>
+				<a href="index.html">Home</a>
+				<a href="products.html">Produkty</a>
+				<a href="howToChooseHeatPump.html">Jak dobrać pompę</a>
+				<a href="#contact">Kontakt</a>
 			</div>
 		</header>
 
@@ -31,8 +31,8 @@
 						dzięki pompie ciepła
 					</h2>
 					<h3>
-						'NazwaFirmy' pomaga swoim klientom odnaleźć to, co sprawia, że dom staje się prawdziwą ostoją. Zapoznaj się z naszym katalogiem 'online'
-						iznajdź produkt, którego szukasz.
+						<span class="company-name">Zephyr</span> pomaga swoim klientom odnaleźć to, co sprawia, że dom staje się prawdziwą ostoją. Zapoznaj się z
+						naszym katalogiem online i znajdź produkt, którego szukasz.
 					</h3>
 				</section>
 			</div>
@@ -47,19 +47,65 @@
 			<figure>
 				<img src="Images/heat-pump 1.jpg" alt="heat pump powering house" />
 			</figure>
+
 			<p>O nas</p>
 
 			<div class="our-history">
-				<h2>Nasza historia</h2>
+				<h2>Nasz cel</h2>
 				<article>
-					'Nazwa firmy' jest zdania, że Twój dom powinien odzwierciedlać Twój styl. Każdy zakątek Twojego życia powinien być interesujący i wyjątkowy
-					tak jak Ty. 'Nazwa firmy' to sklep z pompami ciepła,
+					<span class="company-name">Zephyr</span> jest zdania, że Twój dom powinien odzwierciedlać Twój styl. Każdy zakątek Twojego domu powinien być
+					interesujący i wyjątkowy tak jak Ty. <span class="company-name">Zephyr</span> to sklep z pompami ciepła,
 					<!--odkryć ich osobowość -->
 					który pomaga naszym klientom tchnąć nowe życie do ich domów. Zapoznaj się z naszym katalogiem i znajdź produkt, którego szukasz dla swojego
 					domu.
 				</article>
-				<button class="btn">Kontakt</button>
+				<button class="btn" onclick="window.location.href='products.html'">Nasze produkty</button>
 			</div>
 		</div>
+
+		<section class="contact" id="contact">
+			<div class="row">
+				<div class="column left">
+					<h2>Kontakt</h2>
+					<span class="address">Stanisława Kobylińskiego, 40-026 Katowice</span>
+					<span class="email">Mail.Pomp@gmail.com</span>
+					<span class="phone">(+48) 664 456 123</span>
+				</div>
+				<div class="column right">
+					<div class="container">
+						<h2>Napisz do nas!</h2>
+						<form target="_blank" action="https://formsubmit.co/erykbabayan@gmail.com" method="POST">
+							<div class="form-group">
+								<div class="form-row">
+									<div class="col left-col">
+										<input type="text" name="Imię" class="form-control" placeholder="Imię" required />
+									</div>
+									<div class="col right-col">
+										<input type="email" name="E-mail" class="form-control" placeholder="Adres e-mail" required />
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="col left-col">
+										<input type="text" name="Temat" class="form-control" placeholder="Temat" required />
+									</div>
+									<div class="col right-col">
+										<input type="number" name="Telefon" class="form-control" placeholder="Telefon (opcjonalne)" />
+									</div>
+								</div>
+							</div>
+							<div class="form-text">
+								<textarea placeholder="Tutaj wpisz swoją wiadomość..." class="form-control" name="Wiadomość" rows="10" required></textarea>
+							</div>
+							<button type="submit" class="btn submit-btn">Wyślij</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<section id="map" class="map">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.1982712403925!2d19.025999664894293!3d50.25585923996117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce4a29ecc34d%3A0xf889ef16e2c2733e!2sKobyli%C5%84skiego%2C%2040-000%20Katowice!5e0!3m2!1spl!2spl!4v1614447773264!5m2!1spl!2spl"
+				></iframe>
+			</section>
+		</section>
 	</body>
 </html>

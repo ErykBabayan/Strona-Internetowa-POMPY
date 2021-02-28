@@ -1,3 +1,12 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
 	padding: 0;
 	margin: 0;
@@ -28,7 +37,7 @@ HEADER HEADER HEADER
 	padding: 18px;
 	font-weight: 300;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 24px;
 	line-height: 25px;
 	border-radius: 4px;
 }
@@ -38,7 +47,7 @@ HEADER HEADER HEADER
 }
 
 .header a.logo {
-	font-size: 35px;
+	font-size: 40px;
 	font-weight: bold;
 }
 
@@ -74,6 +83,7 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 */
 
 .column {
+	margin-top: 150px;
 	float: left;
 	color: #2a7c6f;
 	font-family: "Roboto", sans-serif;
@@ -86,7 +96,6 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 	width: 50%;
 }
 .right img {
-	margin-top: 50px;
 	max-width: 100%;
 	height: auto;
 }
@@ -101,11 +110,16 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 }
 .pump-description h2 {
 	font-weight: 400;
+	margin: 50px 0px;
 }
 .pump-description h3 {
 	font-weight: 300;
-	margin-top: 50px;
 	max-width: 500px;
+}
+
+.company-name {
+	font-weight: 500;
+	text-transform: uppercase;
 }
 
 .row:after {
@@ -114,7 +128,27 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 	clear: both;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 5000px) {
+	.pump-description h1 {
+		font-size: 80px;
+		margin-bottom: 100px;
+	}
+	.pump-description h2 {
+		font-size: 30px;
+	}
+	.pump-description h3 {
+		font-size: 22px;
+		padding-right: 25px;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.pump-description h1 {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
 	.column {
 		width: 100%;
 	}
@@ -129,9 +163,11 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 		margin: 0px;
 		text-align: center;
 	}
+
 	.pump-description h3 {
 		margin: auto;
 		margin-top: 50px;
+		font-size: 22px;
 	}
 }
 
@@ -152,15 +188,14 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 .about-us img {
 	width: 100%;
 	height: auto;
-
 	filter: brightness(60%);
 }
 .about-us p {
-	position: relative;
+	color: white;
+	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -560%);
-	color: white;
+	transform: translate(-50%, -550%);
 	font-size: 60px;
 	text-transform: uppercase;
 	font-family: "Roboto", sans-serif;
@@ -174,8 +209,8 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 }
 
 .our-history h2 {
-	margin-top: 100px;
-	font-size: 40px;
+	margin: 100px 0px;
+	font-size: 60px;
 	font-weight: 300;
 	text-transform: uppercase;
 }
@@ -184,7 +219,8 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 	max-width: 1000px;
 	margin: auto;
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 24px;
+	padding: 0 3%;
 }
 
 .btn {
@@ -198,7 +234,7 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 20px;
 	transition-duration: 0.4s;
 	cursor: pointer;
 }
@@ -210,3 +246,134 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 
 /*ABOUT-US ABOUT-US ABOUT-US*/
 /*ABOUT-US ABOUT-US ABOUT-US*/
+
+/*CONTACT CONTACT CONTACT*/
+/*CONTACT CONTACT CONTACT*/
+.contact {
+	padding: 5% 5%;
+}
+
+.contact .column {
+	float: left;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	background-color: #2a7c6f;
+	height: 800px;
+}
+.contact .left {
+	width: 50%;
+}
+.contact h2 {
+	margin-top: 80px;
+	font-weight: 200;
+	font-size: 70px;
+	text-transform: uppercase;
+}
+.contact span {
+	display: block;
+	margin-top: 100px;
+	font-size: large;
+	font-weight: 300;
+	margin-bottom: 50px;
+}
+.contact .right {
+	width: 50%;
+}
+
+@media screen and (max-width: 1001px) {
+	.contact .column {
+		width: 100%;
+		padding: 0%;
+		margin-top: 20px;
+	}
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: white;
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: white;
+}
+
+.container {
+	font-family: "Roboto", sans-serif;
+}
+
+input {
+	background-color: #2a7c6f;
+	color: white;
+	outline: 0;
+	border-width: 0 0 2px;
+	border-color: white;
+	margin-top: 50px;
+	font-size: 18px;
+	margin-left: 20px;
+}
+input:focus {
+	border-color: white;
+	outline: 1px;
+}
+
+.col {
+	display: inline-block;
+}
+
+textarea {
+	margin-top: 50px;
+	width: 440px;
+	background-color: #2a7c6f;
+
+	outline: 0;
+	border-width: 0 0 2px;
+	border-color: white;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	color: white;
+}
+
+.submit-btn {
+	width: 75%;
+	border-radius: 0px;
+}
+.submit-btn:hover {
+	background-color: #94bdb6;
+	color: white;
+}
+
+@media screen and (max-width: 1200px) {
+	.contact .left span {
+		font-size: 20px;
+	}
+	.contact {
+		padding: 2% 2%;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	.contact span {
+		font-size: 25px;
+	}
+	.contact h2 {
+		font-size: 60px;
+	}
+}
+
+/*MAP MAP MAP*/ /*MAP MAP MAP*/
+/*MAP MAP MAP*/ /*MAP MAP MAP*/
+
+.map iframe {
+	width: 99.8%;
+	height: 500px;
+	border-color: white;
+	border-top: #2a7c6f;
+}
