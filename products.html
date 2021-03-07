@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="pl">
 	<head>
-		<link rel="stylesheet" href="indexStyles.css" />
+		<link rel="stylesheet" href="productsStyles.css" />
 
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet" />
 	</head>
 
 	<body>
 		<header class="header">
-			<a href="#default" class="logo">Zephyr</a>
+			<a href="index.html" class="logo"><img src="images/logo1.png" alt="Website Logo" /></a>
 			<div class="header-right">
 				<a href="index.html">Home</a>
 				<a href="products.html">Produkty</a>
@@ -18,14 +17,26 @@
 			</div>
 		</header>
 
-		<div>Dobra zmiana dla twojego domu</div>
-		<div class="row">
-			<div class="column left">
-				<img src="images/fa02a-1.jpg" alt="folansi heat pump" />
+		<section class="product-container">
+			<div class="row">
+				<div class="column">
+					<div class="content fa-02">
+						<a class="product-link-img" href="heatpumps/products-hp-fa02.html"> <img src="images/fa02a-1.jpg" alt="folansi heat pump" /> </a>
+						<button class="btn" onclick="window.location.href='heatpumps/products-hp-fa02'">Sprawdź więcej</button>
+						<h3 class="description">Pompa ciepła Folansi FA-02 7.1KW Monoblock</h3>
+						<p class="pump-price">5800zł</p>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="content fa-03">
+						<a class="product-link-img" href="heatpumps/products-hp-fa03.html"> <img src="images/fa03c.jpg" alt="folansi heat pump" /> </a>
+						<button class="btn" onclick="window.location.href='heatpumps/products-hp-fa03'">Sprawdź więcej</button>
+						<h3 class="description">Pompa ciepła Folansi FA-03 11KW Monoblock</h3>
+						<p class="pump-price">7800zł</p>
+					</div>
+				</div>
 			</div>
-			<div class="column right">
-				<img src="images/fa03c.jpg" alt="folansi heat pump" />
-			</div>
-		</div>
+		</section>
 	</body>
 </html>

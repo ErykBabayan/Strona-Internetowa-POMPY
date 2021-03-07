@@ -1,0 +1,172 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	color: #2a7c6f;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+	padding: 0;
+	margin: 0;
+
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+/* 
+HEADER HEADER HEADER
+HEADER HEADER HEADER
+*/
+
+.header {
+	overflow: hidden;
+	padding: 20px 10px;
+	margin-bottom: 200px;
+}
+
+.header a {
+	float: left;
+	text-transform: uppercase;
+	margin-right: 50px;
+	text-align: center;
+	padding: 18px;
+	font-weight: 300;
+	text-decoration: none;
+	font-size: 24px;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.header a:hover {
+	color: #70ccbd;
+}
+
+.logo {
+	margin-top: -20px;
+}
+
+.header-right {
+	float: right;
+}
+
+@media screen and (max-width: 1170px) {
+	.header a {
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 975px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	.header-right {
+		float: none;
+	}
+}
+
+/* 
+HEADER HEADER HEADER
+HEADER HEADER HEADER
+*/
+
+/*PRODUCTS PRODUCTS PRODUCTS*/
+/*PRODUCTS PRODUCTS PRODUCTS*/
+
+.product-container {
+	margin: auto;
+	max-width: 1500px;
+}
+
+.row,
+.row > .column {
+	padding: 8px;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+.content {
+	text-align: center;
+	padding: 20px;
+	background-color: white;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* PRODUCTS AND HOVERING BUTTON   */
+
+.content img {
+	width: 100%;
+	padding-bottom: 0px;
+	margin-bottom: -58px;
+}
+
+.product-link-img {
+	transition: ease-in-out 1s;
+}
+
+.product-link-img:hover {
+	filter: brightness(80%);
+	transition: 1s;
+}
+
+.btn {
+	width: 100%;
+	cursor: pointer;
+	transition: 0.1s ease-in-out 2s;
+	background-color: white;
+	opacity: 75%;
+	font-size: 0px;
+	height: 0px;
+	border: 0;
+	margin-top: 60px;
+}
+.product-link-img:hover ~ .btn {
+	margin-bottom: 10px;
+}
+
+.product-link-img:hover ~ .btn {
+	height: 65px;
+	transition: 0.25s ease-in-out 0s;
+	font-size: 20px;
+	color: #2a7c6f;
+	margin-top: -10px;
+}
+.btn:hover {
+	height: 65px;
+	transition: 0.25s ease-in-out 0s;
+	font-size: 20px;
+	margin-top: -10px;
+}
+
+.btn:hover {
+	margin-bottom: 10px;
+}
+
+.description {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.pump-price {
+	margin-top: 10px;
+}
+
+/* PRODUCTS AND HOVERING BUTTON   */
+
+/*PRODUCTS PRODUCTS PRODUCTS*/
+/*PRODUCTS PRODUCTS PRODUCTS*/
