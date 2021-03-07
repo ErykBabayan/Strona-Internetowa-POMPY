@@ -81,6 +81,19 @@ HEADER HEADER HEADER
 /*PRODUCTS PRODUCTS PRODUCTS*/
 /*PRODUCTS PRODUCTS PRODUCTS*/
 
+.product-headline {
+	margin: auto;
+	text-align: center;
+	font-size: 70px;
+}
+.product-invite {
+	margin: auto;
+	text-align: center;
+	margin-top: 50px;
+	max-width: 800px;
+	font-size: 20px;
+}
+
 .product-container {
 	margin: auto;
 	max-width: 1500px;
@@ -163,6 +176,7 @@ HEADER HEADER HEADER
 	text-transform: uppercase;
 }
 .pump-price {
+	font-size: 18px;
 	margin-top: 10px;
 }
 

@@ -1,6 +1,8 @@
 * {
 	margin: 0px;
 	padding: 0px;
+	color: #2a7c6f;
+	font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -29,11 +31,9 @@ HEADER HEADER HEADER
 
 .header a {
 	float: left;
-	color: #2a7c6f;
 	text-transform: uppercase;
 	margin-right: 50px;
 	text-align: center;
-	font-family: "Roboto", sans-serif;
 	padding: 18px;
 	font-weight: 300;
 	text-decoration: none;
@@ -84,8 +84,6 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 .column {
 	margin-top: 150px;
 	float: left;
-	color: #2a7c6f;
-	font-family: "Roboto", sans-serif;
 }
 .left {
 	width: 50%;
@@ -197,13 +195,10 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 	transform: translate(-50%, -550%);
 	font-size: 60px;
 	text-transform: uppercase;
-	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 }
 
 .our-history {
-	color: #2a7c6f;
-	font-family: "Roboto", sans-serif;
 	text-align: center;
 }
 
@@ -224,7 +219,7 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 
 .btn {
 	background-color: white;
-	color: #2a7c6f;
+
 	border: 2px solid #2a7c6f;
 	outline: none;
 	border-radius: 25px;
@@ -248,14 +243,17 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 
 /*CONTACT CONTACT CONTACT*/
 /*CONTACT CONTACT CONTACT*/
+
 .contact {
 	padding: 5% 5%;
+}
+.contact h2 {
+	color: white;
 }
 
 .contact .column {
 	float: left;
 	color: white;
-	font-family: "Roboto", sans-serif;
 	text-align: center;
 	background-color: #2a7c6f;
 	height: 800px;
@@ -270,6 +268,7 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 	text-transform: uppercase;
 }
 .contact span {
+	color: white;
 	display: block;
 	margin-top: 100px;
 	font-size: large;
@@ -304,10 +303,6 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 	color: white;
 }
 
-.container {
-	font-family: "Roboto", sans-serif;
-}
-
 input {
 	background-color: #2a7c6f;
 	color: white;
@@ -329,13 +324,11 @@ input:focus {
 
 textarea {
 	margin-top: 50px;
-	width: 440px;
+	width: 410px;
 	background-color: #2a7c6f;
-
 	outline: 0;
 	border-width: 0 0 2px;
 	border-color: white;
-	font-family: "Roboto", sans-serif;
 	font-size: 18px;
 	color: white;
 }
