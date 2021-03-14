@@ -106,7 +106,7 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 	text-transform: uppercase;
 }
 .pump-description h2 {
-	font-weight: 400;
+	font-weight: 300;
 	margin: 50px 0px;
 }
 .pump-description h3 {
@@ -272,7 +272,7 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 	display: block;
 	margin-top: 100px;
 	font-size: large;
-	font-weight: 300;
+	font-weight: 3200;
 	margin-bottom: 50px;
 }
 .contact .right {
