@@ -15,7 +15,7 @@
 				<a href="/index.html">Home</a>
 				<a href="/products.html">Produkty</a>
 				<a href="/howToChooseHeatPump.html">Jak dobrać pompę</a>
-				<a href="/index.html/#contact">Kontakt</a>
+				<a href="/index.html#contact">Kontakt</a>
 			</div>
 		</header>
 
@@ -23,14 +23,108 @@
 		
 		<div class="row">
 			<div class="column left">
-				<img src="/Images/fa02a-1.jpg" alt="">
+				
+				<div class="gallery-container">
+					<div class="mySlides">
+						<img src="/images/fa02a-1.jpg" alt="">
+					</div>
+					<div class="mySlides">
+						<img src="/images/fa03c.jpg" alt="">
+					</div>
+					<div class="mySlides">
+						<img src="/images/hp2.jpg" alt="">
+					</div>
+					<div class="mySlides">
+						<img src="/images/hp3.png" alt="">
+					</div>
+					<div class="mySlides">
+						<img src="/images/Domestic-air-heat-pump-1024x605.png" alt="">
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+			
+					<div class="gallery-row">
+						<div class="gallery-column" onclick="currentSlide(1)">
+						<img class="demo cursor" src="/images/fa02a-1.jpg" alt="" class="demo-cursor">
+						</div>
+						<div class="gallery-column"onclick="currentSlide(2)">
+							<img class="demo cursor" src="/images/fa03c.jpg" alt="" class="demo-cursor">
+						</div>
+						<div class="gallery-column" onclick="currentSlide(3)">
+							<img class="demo cursor" src="/images/hp2.jpg" alt="" class="demo-cursor">
+						</div>
+						<div class="gallery-column"onclick="currentSlide(4)">
+							<img class="demo cursor" src="/images/hp3.png" alt="" class="demo-cursor">
+						</div>
+						<div class="gallery-column"onclick="currentSlide(5)">
+							<img class="demo cursor" src="/images/fa02a-1.jpg" alt="" class="demo-cursor">
+						</div>	
+					</div>
+			
+			
+			
+				</div>
+
 			</div>
 			<div class="column right">
-				LOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SIT
-				LOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SIT
-				LOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SITLOREM IPSUM DOLOR SIT
+				<div>Dane techniczne</div>	
+				<ul class="pump-specification">
+						<li>Pobór prądu</li>
+						<li>Cisnienie</li>
+						<li>Moc grzewcza</li>
+						<li>SIasdsd</li>
+						<li>asdddassd</li>
+						<li>dasasadsds</li>
+						<li>fffffffffffffff</li>
+						<li>ghggggggggg</li>
+						<li>hhhhhhhh</li>
+						<li>222222222222222</li>
+					</ul>
 			</div>
 		</div>
 
 	</body>
+
+
+
+
+
+<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
 </html>
