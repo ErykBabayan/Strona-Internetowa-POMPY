@@ -66,6 +66,10 @@ HEADER HEADER HEADER
 		display: block;
 		text-align: center;
 	}
+	.logo {
+		margin-top: -20px;
+		margin-left: -30px;
+	}
 	.header-right {
 		float: none;
 	}
@@ -163,8 +167,9 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 
 	.pump-description h3 {
 		margin: auto;
+		padding: 25px;
 		margin-top: 50px;
-		font-size: 22px;
+		font-size: 20px;
 	}
 }
 
@@ -237,11 +242,19 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 	color: white;
 }
 
+@media screen and (max-width: 1100px) {
+	.our-history article {
+		font-size: 20px;
+		padding: 0 5%;
+	}
+}
+
 /*ABOUT-US ABOUT-US ABOUT-US*/
 /*ABOUT-US ABOUT-US ABOUT-US*/
 
 /*CONTACT CONTACT CONTACT*/
 /*CONTACT CONTACT CONTACT*/
+
 #contact {
 	margin-bottom: -50px;
 }
@@ -265,27 +278,19 @@ ADD-HEAT SECTION ADD-HEAT SECTION
 .contact h2 {
 	margin-top: 80px;
 	font-weight: 200;
-	font-size: 70px;
+	font-size: 65px;
 	text-transform: uppercase;
 }
-.contact span {
+.contact p {
 	color: white;
 	display: block;
 	margin-top: 100px;
-	font-size: large;
+	font-size: 24px;
 	font-weight: 3200;
 	margin-bottom: 50px;
 }
 .contact .right {
 	width: 50%;
-}
-
-@media screen and (max-width: 1001px) {
-	.contact .column {
-		width: 100%;
-		padding: 0%;
-		margin-top: 20px;
-	}
 }
 
 ::placeholder {
@@ -343,23 +348,43 @@ textarea {
 	color: white;
 }
 
-@media screen and (min-width: 950px) {
-	.contact span {
-		font-size: 20px;
-	}
-	.contact h2 {
-		font-size: 60px;
-	}
-}
 @media screen and (max-width: 1250px) {
-	.contact .left span {
-		font-size: 25px;
+	.contact .left p {
+		font-size: 24px;
 	}
 	.contact {
 		padding: 2% 2%;
 	}
 	#contact {
 		margin-top: 100px;
+	}
+
+	.contact h2 {
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.contact .column {
+		width: 100%;
+		padding: 0%;
+		margin-top: 20px;
+	}
+
+	.contact p {
+		font-size: 18px;
+	}
+	.contact h2 {
+		font-size: 65px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.contact h2 {
+		font-size: 57px;
+	}
+	.contact p {
+		font-size: 14px;
 	}
 }
 
@@ -380,7 +405,7 @@ hr {
 	background-color: #2a7c6f;
 	height: 1px;
 	margin-top: 150px;
-	width: 99.9%;
+	width: 99.6%;
 }
 
 .footer {
