@@ -34,10 +34,10 @@ HEADER HEADER HEADER
 	text-transform: uppercase;
 	margin-right: 50px;
 	text-align: center;
-	padding: 18px;
+	padding: 28px;
 	font-weight: 300;
 	text-decoration: none;
-	font-size: 24px;
+	font-size: 26px;
 	line-height: 25px;
 	border-radius: 4px;
 }
@@ -47,20 +47,23 @@ HEADER HEADER HEADER
 }
 
 .logo {
-	margin-top: -20px;
+	margin-top: -30px;
+}
+.logo img {
+	width: 250px;
 }
 
 .header-right {
 	float: right;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1370px) {
 	.header a {
 		margin-right: 10px;
 	}
 }
 
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 1170px) {
 	.header a {
 		float: none;
 		display: block;
